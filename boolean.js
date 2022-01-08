@@ -1,4 +1,7 @@
-let temp = 31;
-let isFreezing = temp >= 32;
+let age = 27;
 
-console.log(isFreezing);
+let isChild = age <= 7;
+console.log(isChild);
+
+let isSenior = age >= 65;
+console.log(isSenior);
