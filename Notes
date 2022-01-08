@@ -2,5 +2,27 @@ Variable is a way to store data for later and use them later
 
 Data Type = refers to different types of data you can work with
 
-To actually change a variable to something different take off the variable assignment i.e "let"
-example: instead of let dog = cash, let dog = apollo; do let dog = 'cash', dog = apollo and dog will change to apollo
+YOU CAN'T DEFINE A VARIABLE MORE THAN ONCE:
+To actually change a variable to something different take off the variable definition i.e "let"
+example: instead of let dog = cash, let dog = apollo;
+do let dog = 'cash', dog = apollo and dog will change to apollo
+
+Variable name has to start with a letter OR $ (dollar sign) or \_ (underscore) NOTHING ELSE
+
+Booleans: True or False
+Comparison Operators:
+-equality operator: ===
+-not equal operator: !==
+-less than operator: <
+-greater than operator: >
+-greater than or equal to: >=
+-less than or equal to: <=
+
+-If Statements: provide 2 things: condition, goes in (), & code to run, goes in {}, if condition is satisfied
+-if (runs first), else(runs if first is false), else if(runs if both are false)
+
+And/Or Statements: chain together multiple comparison operators to create a more complex condition
+-And: True if BOTH sides are true, false if not
+-Or: True is ONE at least ONE argument is true
+-Logical And operator: two ampersands - &&
+-Logical Or operator: two vertical bars - ||
