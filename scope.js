@@ -1,17 +1,14 @@
-let varOne = "varOne";
+//let name = "Makenzie";
 
 if (true) {
-  console.log(varOne);
-  let varTwo = "varTwo";
-  console.log(varTwo);
+  //let name = "Brandon";
 
   if (true) {
-    let varFour = "varFour";
+    let name = "Cash";
+    console.log(name);
   }
 }
 
 if (true) {
-  let varThree = "varThree";
+  console.log(name);
 }
-
-console.log(varTwo);
