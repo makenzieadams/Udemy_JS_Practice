@@ -1,0 +1,6 @@
+Variable is a way to store data for later and use them later
+
+Data Type = refers to different types of data you can work with
+
+To actually change a variable to something different take off the variable assignment i.e "let"
+example: instead of let dog = cash, let dog = apollo; do let dog = 'cash', dog = apollo and dog will change to apollo
