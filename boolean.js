@@ -1,7 +1,9 @@
-let age = 27;
+let age = 250;
 
-let isChild = age <= 7;
-console.log(isChild);
+if (age <= 7) {
+  console.log("Child pricing is ten dollars less");
+}
 
-let isSenior = age >= 65;
-console.log(isSenior);
+if (age >= 65) {
+  console.log("Senior discount avaliable");
+}
