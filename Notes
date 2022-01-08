@@ -1,3 +1,5 @@
+VARIABLES:
+
 Variable is a way to store data for later and use them later
 
 Data Type = refers to different types of data you can work with
@@ -26,3 +28,8 @@ And/Or Statements: chain together multiple comparison operators to create a more
 -Or: True is ONE at least ONE argument is true
 -Logical And operator: two ampersands - &&
 -Logical Or operator: two vertical bars - ||
+
+Scope: JS uses Lexical scoping (AKA static scoping).
+In a scope you can access variables defined in that scope, or in any parent/ancestor in that scope
+Global scope: contains all things defined outside of code blocks. Always exists.
+Local scope: contains all things inside of code blocks
