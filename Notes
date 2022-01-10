@@ -33,3 +33,12 @@ Scope: JS uses Lexical scoping (AKA static scoping).
 In a scope you can access variables defined in that scope, or in any parent/ancestor in that scope
 Global scope: contains all things defined outside of code blocks. Always exists.
 Local scope: contains all things inside of code blocks
+
+FUNCTIONS:
+
+A block of code designed to perform a particular task. Can run as many times as you want to.
+A function is executed when "something" invokes (call's it)
+
+- 3 important parts to a function: input, code, output
+  Input and argument are the same thing
+  Output known as return value
