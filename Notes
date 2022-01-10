@@ -42,3 +42,13 @@ A function is executed when "something" invokes (call's it)
 - 3 important parts to a function: input, code, output
   Input and argument are the same thing
   Output known as return value
+  Return can only be used a single time only in functions
+
+  When you return something from a function, you can store it's value in a variable using syntax
+
+  UNDEFINED AND NULL:
+  -Will see for variables that are never assigned a calue
+  -For function arguments that aren't provided
+  -If you try to do something with the return value from a function, but that function doesn't return anything
+  -WHEN WE SEE UNDEFINED - IT IS A LANGUAGE DEFAULT
+  -WHEN WE SEE NULL - SOMETHING WAS EXPLICITLY CLEARED BY THE DEVELOPER OF THE PROGRAM ABOVE
