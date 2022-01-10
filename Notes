@@ -52,3 +52,7 @@ A function is executed when "something" invokes (call's it)
   -If you try to do something with the return value from a function, but that function doesn't return anything
   -WHEN WE SEE UNDEFINED - IT IS A LANGUAGE DEFAULT
   -WHEN WE SEE NULL - SOMETHING WAS EXPLICITLY CLEARED BY THE DEVELOPER OF THE PROGRAM ABOVE
+
+  ARGUMENTS:
+  -A value passed to the function when it is invoked (can include multiple)
+  -A default argument: parameters allow named parameters to be initialized with default values if no value or undefined is passed
