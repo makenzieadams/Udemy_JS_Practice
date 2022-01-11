@@ -13,12 +13,15 @@ console.log(scoreText);*/
 
 //CHALLENGE
 
-/*let getTip = function (total, tipPercent = 0.2) {
-  return total * tipPercent;
+let getTip = function (total, tipPercent = 0.2) {
+  let percent = tipPercent * 100;
+  let tip = total * tipPercent;
+  return `A ${percent}% tip on $${total} would be $${tip}`;
 };
 
-let tipAmount = getTip(10, 0.15);
-console.log(tipAmount);*/
+let tipAmount = getTip(40, 0.25);
+console.log(tipAmount);
 
-let name = "Cash";
-console.log(`Hey, my name is ${name}!`);
+/*let name = "Cash";
+let age = 3;
+console.log(`Hey, my name is ${name}! I am ${age} years old!`);*/
