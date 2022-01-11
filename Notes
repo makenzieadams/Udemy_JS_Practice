@@ -56,3 +56,8 @@ A function is executed when "something" invokes (call's it)
   ARGUMENTS:
   -A value passed to the function when it is invoked (can include multiple)
   -A default argument: parameters allow named parameters to be initialized with default values if no value or undefined is passed
+
+TEMPLATE STRING
+-With template literals, you can use both single and double quotes inside a string
+-Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation. The syntax is ${...}
+-Example: let text = `Welcome ${firstName}, ${lastName}!`;

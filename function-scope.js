@@ -1,16 +1,18 @@
-//Global scope (convert far to cel, far, converted)
-//local scope (far, cel)
+//Global scope (convertFartoCel, tempOne, tempTwo)
+//Local scope (far, cel)
+//Local scope (isFreezing)
 
 let convertFarToCel = function (far) {
-  let result = ((far - 32) * 5) / 9;
+  let cel = ((far - 32) * 5) / 9;
 
-  if (far <= 0) {
+  if (cel <= 0) {
     let isFreezing = true;
   }
-
-  return result;
+  return cel;
 };
 
-let converted = convertFarToCel(-27);
+let tempOne = convertFarToCel(32);
+let tempTwo = convertFarToCel(68);
 
-console.log(converted);
+console.log(tempOne);
+console.log(tempTwo);
