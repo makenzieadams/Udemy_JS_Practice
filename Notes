@@ -61,3 +61,15 @@ TEMPLATE STRING
 -With template literals, you can use both single and double quotes inside a string
 -Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation. The syntax is ${...}
 -Example: let text = `Welcome ${firstName}, ${lastName}!`;
+
+OBJECTS:
+-Allows us to store related pieces of info in a single value
+-Containers for named values called properties (property descriped a piece of data stored on an object)
+-Used for descriptions
+SYNTAX
+-Curly braces (open and close)
+-Name then colon(:) then value
+
+How to pull out a piece of info from an object - DOT NOTATION:
+-Uses dot key on keyboard = console.log(myBook.title)
+-Can also use template string = console.log {`${myBook.title} by ${author}`}
