@@ -63,7 +63,7 @@ TEMPLATE STRING
 -Example: let text = `Welcome ${firstName}, ${lastName}!`;
 
 OBJECTS:
--Allows us to store related pieces of info in a single value
+-Allows us to store related pieces of info in a single value (key and value)
 -Containers for named values called properties (property descriped a piece of data stored on an object)
 -Used for descriptions
 SYNTAX
@@ -73,3 +73,6 @@ SYNTAX
 How to pull out a piece of info from an object - DOT NOTATION:
 -Uses dot key on keyboard = console.log(myBook.title)
 -Can also use template string = console.log {`${myBook.title} by ${author}`}
+
+Changing object properties = myBook.title = 'XYZ' (changes the value of the property)
+(3 essential things doing with objects: create them, reading property values and changing property values)
