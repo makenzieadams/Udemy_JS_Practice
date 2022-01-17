@@ -76,3 +76,5 @@ How to pull out a piece of info from an object - DOT NOTATION:
 
 Changing object properties = myBook.title = 'XYZ' (changes the value of the property)
 (3 essential things doing with objects: create them, reading property values and changing property values)
+
+A METHOD IS AN OBJECT PROPERTY WHOSE VALUE IS A FUNCTION
