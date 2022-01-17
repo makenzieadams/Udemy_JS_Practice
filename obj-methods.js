@@ -1,8 +1,13 @@
 let restaurant = {
   name: "TRH",
   guestCapacity: 75,
-  guestCount: 0,
+  guestCount: 73,
   checkAv: function (partySize) {
-    console.log(partySize);
+    let seatsLeft = this.guestCapacity - this.guestCount;
+    return partySize <= seatsLeft;
   },
 };
+
+let status = restaurant.checkAv(4);
+
+console.log(status);
