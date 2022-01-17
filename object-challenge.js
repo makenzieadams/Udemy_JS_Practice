@@ -31,3 +31,5 @@ addIncome(myAccount, 2000);
 addExpense(myAccount, 2.5);
 addExpense(myAccount, 150);
 console.log(getAccountSummary(myAccount));
+resetAccount(myAccount);
+console.log(getAccountSummary(myAccount));
