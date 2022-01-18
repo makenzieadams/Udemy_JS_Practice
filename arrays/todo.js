@@ -16,6 +16,22 @@
 //Add new item to end
 //Remove 1st item from list
 
+// const todos = ["Bath", "Brush Teeth", "Dry Hair", "Paint Nails", "Makeup"];
+
+// todos.splice(2, 1);
+// todos.push("Go to Bed");
+// todos.shift();
+
+// console.log(`You have ${todos.length} todos.`);
+// console.log(todos);
+
+//******************************************************** */
+
+// Challenge 3
+// Replace final console.log with foreach method call
+// 1. The first item
+// 2. Second item
+
 const todos = ["Bath", "Brush Teeth", "Dry Hair", "Paint Nails", "Makeup"];
 
 todos.splice(2, 1);
@@ -23,4 +39,7 @@ todos.push("Go to Bed");
 todos.shift();
 
 console.log(`You have ${todos.length} todos.`);
-console.log(todos);
+todos.forEach(function (todo, index) {
+  const num = index + 1;
+  console.log(`${num}. ${todo}`);
+});
