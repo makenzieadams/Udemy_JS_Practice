@@ -22,7 +22,7 @@ console.log(name.trim());
 //length is more than 8 and doesn't contain 'password' - true otherwise false
 
 let isValidPassword = function (password) {
-  if (password.includes("password") || password.length < 8) {
+  if (password.includes("password") || password.length > 8) {
     return true;
   } else {
     return false;

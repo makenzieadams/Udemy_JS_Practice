@@ -14,9 +14,6 @@ let restaurant = {
   },
 };
 
-//seatParty
-//removeParty
-
 restaurant.seatParty(72);
 console.log(restaurant.checkAv(4));
 restaurant.removeParty(5);

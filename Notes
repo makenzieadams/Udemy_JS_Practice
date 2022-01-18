@@ -77,4 +77,19 @@ How to pull out a piece of info from an object - DOT NOTATION:
 Changing object properties = myBook.title = 'XYZ' (changes the value of the property)
 (3 essential things doing with objects: create them, reading property values and changing property values)
 
+Object Method:
 A METHOD IS AN OBJECT PROPERTY WHOSE VALUE IS A FUNCTION
+
+"THIS" KEYWORD:
+Inside of methods, we have access to "this"
+"this" references the object that the method is defined on
+
+String Method
+Google mdn string
+
+Numbers:
+-toFixed method - takes a single argument, a number, number of digits you want to keep
+-Math.round - rounds
+-Math.floor - rounds down
+-Math.ceil - rounds up
+-Math.random - generates number between 0 inclusive and 1 exclusive
