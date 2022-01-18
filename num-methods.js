@@ -18,13 +18,15 @@ console.log(randomNum);*/
 //return true/false
 
 let personGuess = function (guess) {
-  if (personGuess === guess) {
+  let min = 1;
+  let max = 5;
+  let random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  if (random === guess) {
     return true;
   } else {
     return false;
   }
 };
-let min = 1;
-let max = 5;
-let guess = Math.floor(Math.random() * (max - min + 1)) + min;
-console.log(guess);
+
+console.log(personGuess(3));
