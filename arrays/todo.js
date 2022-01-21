@@ -49,15 +49,14 @@
 //Challenge 4
 //loop through array using for statement
 
-const todos = ["Bath", "Brush Teeth", "Dry Hair", "Paint Nails", "Makeup"];
+// const todos = ["Bath", "Brush Teeth", "Dry Hair", "Paint Nails", "Makeup"];
 
-const loudTodos = todos.filter((todo) => {
-  return todo.includes("B");
-});
-
-console.log(loudTodos);
 // for (let count = 0; count < todos.length; count++) {
 //   const num = count + 1;
 //   const todo = todos[count];
 //   console.log(`${num}. ${todo}.`);
 // }
+
+//******************************************************** */
+
+//Challenge 5
