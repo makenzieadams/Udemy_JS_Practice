@@ -37,7 +37,8 @@ const notes = [
 console.log(notes.length);
 console.log(notes);
 
-let someObject = {};
-let otherObject = someObject;
-
-console.log(someObject === otherObject);
+const index = notes.findIndex(function (note, index) {
+  console.log(note);
+  return note.title === "Habits to work on";
+});
+console.log(index);
