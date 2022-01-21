@@ -60,3 +60,28 @@
 //******************************************************** */
 
 //Challenge 5
+// 1. Convert array to array of objects -> text, completed (true/false otherwise)
+// 2. Create function to remove todo by text value
+
+const todos = [
+  {
+    text: "I need to shower.",
+    completed: "True",
+  },
+  {
+    text: "I need to dry my hair.",
+    completed: "True",
+  },
+  {
+    text: "I need to go to bed",
+    completed: "False",
+  },
+];
+
+const deleteTodo = function (todos, text) {
+  const newTodos = todos.filter(function (todo) {
+    return todo.text.toLowerCase() !== text.toLowerCase();
+  });
+  return newTodos;
+};
+console.log(deleteTodo(todos, "I need to dry my hair."));
