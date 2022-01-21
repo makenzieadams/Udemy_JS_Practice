@@ -37,4 +37,7 @@ const notes = [
 console.log(notes.length);
 console.log(notes);
 
-console.log(notes.indexOf({}));
+let someObject = {};
+let otherObject = someObject;
+
+console.log(someObject === otherObject);
