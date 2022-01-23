@@ -86,6 +86,45 @@
 // };
 // console.log(deleteTodo(todos, "I need to dry my hair."));
 
+//********************************************************************** */
+
+// const todos = [
+//   {
+//     text: "I need to shower.",
+//     completed: true,
+//   },
+//   {
+//     text: "I need to dry my hair.",
+//     completed: true,
+//   },
+//   {
+//     text: "I need to go to bed",
+//     completed: false,
+//   },
+// ];
+
+// const findToDo = function (todos, toDoText) {
+//   return todos.find(function (todo, index) {
+//     return todo.text.toLowerCase() === toDoText.toLowerCase();
+//   });
+// };
+
+// const findToDos = function (todos, returnText) {
+//   return todos.filter(function (todo) {
+//     const isTextMatch = todo.text
+//       .toLowerCase()
+//       .includes(returnText.toLowerCase());
+//     const isCompletedMatch = todo.completed
+//       .toLowerCase()
+//       .includes(returnText.toLowerCase());
+//     return isTextMatch || isCompletedMatch;
+//   });
+// };
+
+// console.log(findToDos(todos, "al"));
+
+//*********************************************************************** */
+
 const todos = [
   {
     text: "I need to shower.",
@@ -101,22 +140,23 @@ const todos = [
   },
 ];
 
+const sortToDos = function (todos) {
+  todos.sort(function (a, b) {
+    return a.completed - b.completed;
+  });
+};
+
 const findToDo = function (todos, toDoText) {
-  return todos.find(function (todo, index) {
+  return todos.find(function (todo) {
     return todo.text.toLowerCase() === toDoText.toLowerCase();
   });
 };
 
-const findToDos = function (todos, returnText) {
+const findToDos = function (todos) {
   return todos.filter(function (todo) {
-    const isTextMatch = todo.text
-      .toLowerCase()
-      .includes(returnText.toLowerCase());
-    const isCompletedMatch = todo.completed
-      .toLowerCase()
-      .includes(returnText.toLowerCase());
-    return isTextMatch || isCompletedMatch;
+    return !todo.completed;
   });
 };
 
-console.log(findToDos(todos, "al"));
+sortToDos(todos);
+console.log(todos);
