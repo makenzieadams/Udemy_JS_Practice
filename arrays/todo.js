@@ -89,15 +89,15 @@
 const todos = [
   {
     text: "I need to shower.",
-    completed: "True",
+    completed: true,
   },
   {
     text: "I need to dry my hair.",
-    completed: "True",
+    completed: true,
   },
   {
     text: "I need to go to bed",
-    completed: "False",
+    completed: false,
   },
 ];
 
@@ -108,14 +108,14 @@ const findToDo = function (todos, toDoText) {
 };
 
 const findToDos = function (todos, returnText) {
-  return todos.filter(function (todo, index) {
+  return todos.filter(function (todo) {
     const isTextMatch = todo.text
       .toLowerCase()
       .includes(returnText.toLowerCase());
-    const isBodyMatch = todo.text
+    const isCompletedMatch = todo.completed
       .toLowerCase()
       .includes(returnText.toLowerCase());
-    return isTextMatch || isBodyMatch;
+    return isTextMatch || isCompletedMatch;
   });
 };
 
