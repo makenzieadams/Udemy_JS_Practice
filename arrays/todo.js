@@ -85,3 +85,38 @@
 //   return newTodos;
 // };
 // console.log(deleteTodo(todos, "I need to dry my hair."));
+
+const todos = [
+  {
+    text: "I need to shower.",
+    completed: "True",
+  },
+  {
+    text: "I need to dry my hair.",
+    completed: "True",
+  },
+  {
+    text: "I need to go to bed",
+    completed: "False",
+  },
+];
+
+const findToDo = function (todos, toDoText) {
+  return todos.find(function (todo, index) {
+    return todo.text.toLowerCase() === toDoText.toLowerCase();
+  });
+};
+
+const findToDos = function (todos, returnText) {
+  return todos.filter(function (todo, index) {
+    const isTextMatch = todo.text
+      .toLowerCase()
+      .includes(returnText.toLowerCase());
+    const isBodyMatch = todo.text
+      .toLowerCase()
+      .includes(returnText.toLowerCase());
+    return isTextMatch || isBodyMatch;
+  });
+};
+
+console.log(findToDos(todos, "al"));
