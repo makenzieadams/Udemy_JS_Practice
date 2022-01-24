@@ -64,7 +64,7 @@
 
 const notes = [
   {
-    title: "my next trip",
+    title: "My next trip",
     body: "I would like to go to Spain",
   },
   {
@@ -84,7 +84,7 @@ const sortNotes = function (notes) {
     } else if (b.title.toLowerCase() < a.title.toLowerCase) {
       return 1;
     } else {
-      0;
+      return 0;
     }
   });
 };
