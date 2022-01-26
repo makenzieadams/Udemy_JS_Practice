@@ -1,4 +1,4 @@
-const notes = [
+const todos = [
   {
     text: "order food",
     completed: false,
