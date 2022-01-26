@@ -1,5 +1,9 @@
-Challenge One:
+Challenge One Pt. 1:
 
 1. Create a new HTML file
 2. Add an h1(title) and 5 p tags 
 3. Server folder and view doc in browser
+
+Challenge One Pt. 2:
+1. Create and link JS file to HTML
+2. Iterate over ever property removing any p that have the word "the"
