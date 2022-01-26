@@ -7,3 +7,8 @@ Challenge One Pt. 1:
 Challenge One Pt. 2:
 1. Create and link JS file to HTML
 2. Iterate over ever property removing any p that have the word "the"
+
+Challenge Two Pt. 1:
+
+1. Print summary msg "you have 2 todos left" (in p tag)
+2. Add a p for each to-do above
