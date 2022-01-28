@@ -13,6 +13,6 @@ const notes = [
   },
 ];
 
-document.querySelector("button").addEventListener("Click", function (e) {
+document.querySelector("button").addEventListener("click", function (e) {
   e.target.textContent = "The button was clicked";
 });

@@ -125,38 +125,40 @@
 
 //*********************************************************************** */
 
-const todos = [
-  {
-    text: "I need to shower.",
-    completed: true,
-  },
-  {
-    text: "I need to dry my hair.",
-    completed: true,
-  },
-  {
-    text: "I need to go to bed",
-    completed: false,
-  },
-];
+// const todos = [
+//   {
+//     text: "I need to shower.",
+//     completed: true,
+//   },
+//   {
+//     text: "I need to dry my hair.",
+//     completed: true,
+//   },
+//   {
+//     text: "I need to go to bed",
+//     completed: false,
+//   },
+// ];
 
-const sortToDos = function (todos) {
-  todos.sort(function (a, b) {
-    return a.completed - b.completed;
-  });
-};
+// const sortToDos = function (todos) {
+//   todos.sort(function (a, b) {
+//     return a.completed - b.completed;
+//   });
+// };
 
-const findToDo = function (todos, toDoText) {
-  return todos.find(function (todo) {
-    return todo.text.toLowerCase() === toDoText.toLowerCase();
-  });
-};
+// const findToDo = function (todos, toDoText) {
+//   return todos.find(function (todo) {
+//     return todo.text.toLowerCase() === toDoText.toLowerCase();
+//   });
+// };
 
-const findToDos = function (todos) {
-  return todos.filter(function (todo) {
-    return !todo.completed;
-  });
-};
+// const findToDos = function (todos) {
+//   return todos.filter(function (todo) {
+//     return !todo.completed;
+//   });
+// };
 
-sortToDos(todos);
-console.log(todos);
+// sortToDos(todos);
+// console.log(todos);
+
+//********************************************************************* */
