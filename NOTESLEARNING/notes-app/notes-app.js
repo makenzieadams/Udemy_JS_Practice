@@ -13,6 +13,24 @@ const notes = [
   },
 ];
 
+const filters = {
+  searchText: "",
+};
+
+const renderNotes = function (notes, filters) {
+  const filteredNotes = notes.filter(function (note) {
+    return note.title.toLowerCase().includes(filters.searchText.toLowerCase());
+  });
+
+  filteredNotes.forEach(function (note) {
+    const noteEl = document.createElement("p");
+    noteEl.textContent = note.title;
+    document.querySelector("body").appendChild(noteEl);
+  });
+};
+
+renderNotes(notes, filters);
+
 document.querySelector("#note").addEventListener("click", function (event) {
   event.target.textContent = "Hey I was clicked!";
 });
@@ -26,9 +44,6 @@ document.querySelectorAll(".note").forEach(function (note) {
 });
 
 document.querySelector("#search-text").addEventListener("input", function (e) {
-  console.log(e.target.value);
-});
-
-document.querySelector("#new-todo").addEventListener("input", function (event) {
-  console.log(event.target.value);
+  filters.searchText = e.target.value;
+  renderNotes(notes, filters);
 });
