@@ -7,6 +7,6 @@ console.log(fullName);
 let city = "Salisbury";
 let state = "North Carolina";
 let country = "United States";
-let location = city + " " + state + " " + country;
+let location = city + ", " + state + ", " + country;
 
 console.log(location);
