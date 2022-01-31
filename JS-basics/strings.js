@@ -1,2 +1,4 @@
-let name = "Makenzie Adams";
-console.log(name);
+let firstName = "Makenzie";
+let lastName = "Adams";
+
+console.log(firstName, lastName);
