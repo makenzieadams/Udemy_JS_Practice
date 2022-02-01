@@ -3,7 +3,7 @@
 
 // console.log(isFreezing);
 
-let age = 66;
+let age = 27;
 let child = age <= 7;
 let senior = age >= 65;
 
