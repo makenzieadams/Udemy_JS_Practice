@@ -1,4 +1,4 @@
-let age = 27;
+let age = 5;
 let child = age <= 7;
 let seniot = age >= 7;
 if (age <= 7) {
