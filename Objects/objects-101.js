@@ -15,6 +15,7 @@ console.log(
 //Challenge
 //name, age, location
 //create object and create string based on the properties
+//increase age by 1 and print again
 
 let myPerson = {
   name: "Makenize",
@@ -23,5 +24,7 @@ let myPerson = {
 };
 
 console.log(
-  `My name is ${myPerson.name}. I am ${myPerson.age}, and I live in ${myPerson.location}.`
+  `My name is ${myPerson.name}. I am ${myPerson.age + 1}, and I live in ${
+    myPerson.location
+  }.`
 );
