@@ -9,7 +9,7 @@
 // console.log(name.trim());
 
 let isValidPassword = function (password) {
-  if (password.length >= 8 && !password.includes("password")) {
+  if (password.length > 8 && !password.includes("password")) {
     return true;
   }
 
