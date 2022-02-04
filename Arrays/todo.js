@@ -11,4 +11,7 @@ todos.push("Go to bed");
 todos.shift();
 
 console.log(`You have ${todos.length} things to do.`);
-console.log(todos);
+
+todos.forEach(function (todo, index) {
+  console.log(`${index + 1}. ${todo}`);
+});
