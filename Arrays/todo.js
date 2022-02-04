@@ -6,6 +6,9 @@ const todos = [
   "Take a walk",
 ];
 
-console.log(`You have ${todos.length} things to do.`);
+todos.splice(2, 1);
+todos.push("Go to bed");
+todos.shift();
 
-console.log(`You need to: ${todos[0]} and: ${todos[todos.length - 2]}`);
+console.log(`You have ${todos.length} things to do.`);
+console.log(todos);
