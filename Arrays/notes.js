@@ -62,8 +62,44 @@
 
 //********************************************************** */
 
+// const notes = [
+//   {
+//     title: "My next trip",
+//     body: "I would like to go to Spain",
+//   },
+//   {
+//     title: "Habits to work on",
+//     body: "Work out",
+//   },
+//   {
+//     title: "Office modifications",
+//     body: "Get a new seat",
+//   },
+// ];
+
+// notes.forEach(function (item, index) {
+//   console.log(index);
+//   console.log(item);
+// });
+
+// notes[2] = "This is now the new note three";
+
+// console.log(notes.length);
+// console.log(notes);
+
+// // let someObject = {};
+// // let otherObject = someObject;
+// // console.log(someObject === otherObject);
+
+// const index = notes.findIndex(function (note, index) {
+//   console.log(note);
+//   return note.title === "Habits to work on";
+// });
+// console.log(index);
+
+//************************************************************** */
+
 const notes = [
-  {},
   {
     title: "My next trip",
     body: "I would like to go to Spain",
@@ -78,22 +114,21 @@ const notes = [
   },
 ];
 
-// notes.forEach(function (item, index) {
-//   console.log(index);
-//   console.log(item);
+const findNote = function (notes, noteTitle) {
+  const index = notes.findIndex(function (note, index) {
+    return note.title.toLowerCase === noteTitle.toLowerCase;
+  });
+  return notes[index];
+};
+
+const note = findNote(notes, "office modifications");
+console.log(note);
+
+// console.log(notes.length);
+// console.log(notes);
+
+// const index = notes.findIndex(function (note, index) {
+//   console.log(note);
+//   return note.title === "Habits to work on";
 // });
-
-// notes[2] = "This is now the new note three";
-
-console.log(notes.length);
-console.log(notes);
-
-// let someObject = {};
-// let otherObject = someObject;
-// console.log(someObject === otherObject);
-
-const index = notes.findIndex(function (note, index) {
-  console.log(note);
-  return note.title === "Habits to work on";
-});
-console.log(index);
+// console.log(index);
