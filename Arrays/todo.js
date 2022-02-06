@@ -1,17 +1,54 @@
+// const todos = [
+//   "Walk the dog",
+//   "Buy food",
+//   "Groom dog",
+//   "Feed dog",
+//   "Take a walk",
+// ];
+
+// todos.splice(2, 1);
+// todos.push("Go to bed");
+// todos.shift();
+
+// console.log(`You have ${todos.length} things to do.`);
+
+// todos.forEach(function (todo, index) {
+//   console.log(`${index + 1}. ${todo}`);
+// });
+
 const todos = [
-  "Walk the dog",
-  "Buy food",
-  "Groom dog",
-  "Feed dog",
-  "Take a walk",
+  {
+    text: "Walk the dog",
+    completed: true,
+  },
+  {
+    text: "Buy food",
+    completed: true,
+  },
+  {
+    text: "Groom dog",
+    completed: false,
+  },
+  {
+    text: "Feed dog",
+    completed: true,
+  },
+  {
+    text: "Take a walk",
+    completed: false,
+  },
 ];
 
-todos.splice(2, 1);
-todos.push("Go to bed");
-todos.shift();
+const deleteTodo = function (text) {
+  const index = todos.findIndex((todo) => {
+    return text.toLowerCase() === todo.text.toLowerCase();
+  });
 
-console.log(`You have ${todos.length} things to do.`);
+  if (index !== -1) {
+    todos.splice(index, 1);
+  }
+};
 
-todos.forEach(function (todo, index) {
-  console.log(`${index + 1}. ${todo}`);
-});
+deleteTodo("groom dog");
+deleteTodo("walk the dog");
+console.log(todos);

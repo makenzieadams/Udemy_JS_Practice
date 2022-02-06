@@ -115,11 +115,17 @@ const notes = [
 ];
 
 const findNote = function (notes, noteTitle) {
-  const index = notes.findIndex(function (note, index) {
-    return note.title.toLowerCase === noteTitle.toLowerCase;
+  return notes.find(function (note, index) {
+    return note.title.toLowerCase() === noteTitle.toLowerCase();
   });
-  return notes[index];
 };
+
+// const findNote = function (notes, noteTitle) {
+//     const index = notes.findIndex(function (note, index) {
+//       return note.title.toLowerCase === noteTitle.toLowerCase;
+//     });
+//     return notes[index];
+//   };
 
 const note = findNote(notes, "office modifications");
 console.log(note);
