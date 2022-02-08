@@ -39,16 +39,24 @@ const todos = [
   },
 ];
 
-const deleteTodo = function (text) {
-  const index = todos.findIndex((todo) => {
-    return text.toLowerCase() === todo.text.toLowerCase();
-  });
+// const deleteTodo = function (text) {
+//   const index = todos.findIndex((todo) => {
+//     return text.toLowerCase() === todo.text.toLowerCase();
+//   });
 
-  if (index !== -1) {
-    todos.splice(index, 1);
-  }
+//   if (index !== -1) {
+//     todos.splice(index, 1);
+//   }
+// };
+
+const incompleteTodos = function (todos) {
+  return todos.filter((todo) => {
+    return !todo.completed;
+  });
 };
 
-deleteTodo("groom dog");
-deleteTodo("walk the dog");
-console.log(todos);
+console.log(incompleteTodos(todos));
+
+// deleteTodo("groom dog");
+// deleteTodo("walk the dog");
+// console.log(todos)
