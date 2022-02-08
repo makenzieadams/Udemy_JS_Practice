@@ -26,7 +26,7 @@ const todos = [
     completed: true,
   },
   {
-    text: "Groom dog",
+    text: "Aroom dog",
     completed: false,
   },
   {
@@ -49,13 +49,27 @@ const todos = [
 //   }
 // };
 
+const sortTodos = function (todos) {
+  todos.sort(function (a, b) {
+    if (a.text.toLowerCase() < b.text.toLowerCase()) {
+      return -1;
+    } else if (b.text.toLowerCase() < a.text.toLowerCase()) {
+      return 1;
+    } else {
+      0;
+    }
+  });
+};
+
 const incompleteTodos = function (todos) {
   return todos.filter((todo) => {
     return !todo.completed;
   });
 };
 
-console.log(incompleteTodos(todos));
+sortTodos(todos);
+console.log(todos);
+// console.log(incompleteTodos(todos));
 
 // deleteTodo("groom dog");
 // deleteTodo("walk the dog");
