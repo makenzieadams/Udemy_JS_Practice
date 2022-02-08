@@ -26,7 +26,7 @@ const todos = [
     completed: true,
   },
   {
-    text: "Aroom dog",
+    text: "Groom dog",
     completed: false,
   },
   {
@@ -51,9 +51,9 @@ const todos = [
 
 const sortTodos = function (todos) {
   todos.sort(function (a, b) {
-    if (a.text.toLowerCase() < b.text.toLowerCase()) {
+    if (!a.completed && b.completed) {
       return -1;
-    } else if (b.text.toLowerCase() < a.text.toLowerCase()) {
+    } else if (!b.completed && a.completed) {
       return 1;
     } else {
       0;
