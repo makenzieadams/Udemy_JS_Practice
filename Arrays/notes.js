@@ -162,5 +162,13 @@ const findNote = function (notes, noteTitle) {
   });
 };
 
+const filteredNotes = notes.filter(function (note, index) {
+  const isTitleMatch = note.title.toLowerCase().includes("office");
+  const isBodyMatch = note.body.toLowerCase().includes("office");
+  return isTitleMatch || isBodyMatch;
+});
+
+console.log(filteredNotes);
+
 const note = findNote(notes, "office modifications");
 console.log(note);
