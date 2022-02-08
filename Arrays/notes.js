@@ -99,6 +99,48 @@
 
 //************************************************************** */
 
+// const notes = [
+//   {
+//     title: "My next trip",
+//     body: "I would like to go to Spain",
+//   },
+//   {
+//     title: "Habits to work on",
+//     body: "Work out",
+//   },
+//   {
+//     title: "Office modifications",
+//     body: "Get a new seat",
+//   },
+// ];
+
+// const findNote = function (notes, noteTitle) {
+//   return notes.find(function (note, index) {
+//     return note.title.toLowerCase() === noteTitle.toLowerCase();
+//   });
+// };
+
+// // const findNote = function (notes, noteTitle) {
+// //     const index = notes.findIndex(function (note, index) {
+// //       return note.title.toLowerCase === noteTitle.toLowerCase;
+// //     });
+// //     return notes[index];
+// //   };
+
+// const note = findNote(notes, "office modifications");
+// console.log(note);
+
+// // console.log(notes.length);
+// // console.log(notes);
+
+// // const index = notes.findIndex(function (note, index) {
+// //   console.log(note);
+// //   return note.title === "Habits to work on";
+// // });
+// // console.log(index);
+
+//****************************************************************** */
+
 const notes = [
   {
     title: "My next trip",
@@ -120,21 +162,5 @@ const findNote = function (notes, noteTitle) {
   });
 };
 
-// const findNote = function (notes, noteTitle) {
-//     const index = notes.findIndex(function (note, index) {
-//       return note.title.toLowerCase === noteTitle.toLowerCase;
-//     });
-//     return notes[index];
-//   };
-
 const note = findNote(notes, "office modifications");
 console.log(note);
-
-// console.log(notes.length);
-// console.log(notes);
-
-// const index = notes.findIndex(function (note, index) {
-//   console.log(note);
-//   return note.title === "Habits to work on";
-// });
-// console.log(index);
