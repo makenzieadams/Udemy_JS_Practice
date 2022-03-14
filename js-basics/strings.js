@@ -1,1 +1,3 @@
-let name = "Makenzie";
+let firstName = "Makenzie";
+
+console.log(firstName);
